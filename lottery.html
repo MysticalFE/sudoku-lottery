@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/lottery.css">
+    <script type="text/javascript" src="http://img1.iluxday.com/js/jquery-1.11.3.min.js?v=20151210"></script>
+	<title>抽奖活动</title>
+</head>
+<body>
+	<div class="lotteryWraper">
+        <img src="images/lottery_page_01.jpg" alt="" />
+        <div class="rollPrizeInfo">
+            <div class="rollBox">
+<!--                 <ul>
+                    <li>恭喜12345678900 12:00分 获得XXX奖</li>
+                    <li>恭喜1234000789获得XXX奖</li>
+                    <li>恭喜777776789获得XXX奖</li>
+                    <li>恭喜666666789获得XXX奖</li>
+                    <li>恭喜166223456789获得XXX奖</li>
+                </ul> -->
+            </div>
+        </div>
+		<!--<p id="resOpportunity"></p>-->
+		<div class="lotteryBox" id="lotteryBox">
+			<ul>
+				<li class="lottery-unit-0" data-value="0">
+                    <img src="images/01.png" alt="" />
+                    <div class="shade"></div>
+				</li>
+				<li class="lottery-unit-1" data-value="1">
+                    <img src="images/02.png" alt="" />
+                    <div class="shade"></div>
+				</li>
+				<li class="lottery-unit-2" data-value="2">
+                    <img src="images/03.png" alt="" />
+                    <div class="shade"></div>
+				</li>
+				<li class="lottery-unit-7" data-value="7">
+                    <img src="images/04.png" alt="" />
+                    <div class="shade"></div>
+				</li>
+				<li class="lotteryBtn pr">
+                    <img src="images/05.png" alt="" />
+                    <sapn id="resOpportunity" class="resOpportunity pa"></sapn>
+				</li>
+				<li class="lottery-unit-3" data-value="3">
+                    <img src="images/06.png" alt="" />
+                    <div class="shade"></div>
+				</li>
+				<li class="lottery-unit-6" data-value="6">
+                    <img src="images/07.png" alt="" />
+                    <div class="shade"></div>
+				</li>
+				<li class="lottery-unit-5" data-value="5">
+                    <img src="images/08.png" alt="" />
+                    <div class="shade"></div>
+				</li>
+				<li class="lottery-unit-4" data-value="4">
+                    <img src="images/09.png" alt="" />
+                    <div class="shade"></div>
+				</li>
+			</ul>
+		</div>
+        <div class="lotteryRule">
+            <img src="images/lottery_page_04.jpg" alt="" />
+        </div>
+        <div class="clickBtn">
+            <img src="images/lottery_page_05.jpg" alt="" />
+        </div>
+	</div>
+
+	<script type="text/javascript">
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=640){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                }
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+	</script>
+	<script type="text/javascript" src="js/index.js"></script>
+    <!-- <script type="text/javascript" src="../20170623/js/lux.js"></script> -->
+</body>
+</html>

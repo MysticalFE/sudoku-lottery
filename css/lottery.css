@@ -1,0 +1,118 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: 'microsoft yahei', '\534E\6587\7EC6\9ED1', Verdana, Arial, Helvetica, sans-serif;
+	font-size:.4rem;
+}
+ul li{
+	list-style: none;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.clearfix:after{
+	content:'';
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.pa{
+	position:absolute;
+}
+.pr{
+	position:relative;
+}
+a{
+	display: block;
+}
+img {
+    display:block;
+    width:100%;
+}
+a:link{
+	-webkit-tap-highlight-color:transparent;
+	tap-highlight-color:transparent
+}
+a:hover{
+	color:#000;
+	text-decoration: none;
+}
+.rollPrizeInfo {
+    background:url(../images/lottery_page_02.jpg) no-repeat;
+    background-size:100% 100%;
+    height:1.1rem;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rollBox {
+    width: 90%;
+    height: .6rem;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    text-align: center;
+    line-height: .6rem;
+    font-size: .27rem;
+}
+.lotteryBox{
+	background:url(../images/lottery_page_03.jpg) no-repeat;
+    background-size:100% 100%;
+    height: 5.1rem;
+    display: flex;
+    align-items:center;
+	justify-content:center;
+}
+
+.lotteryBox ul {
+	display: flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:center;
+    padding:.2rem;
+}
+.lotteryBox ul li {
+    position:relative;
+	width:30.8%;
+    margin-bottom: 0.08rem;
+    margin-right:.1rem;
+}
+.resOpportunity {
+    width:100%;
+    bottom:11%;
+    left:50%;
+    -moz-transform:translate(-36%,0);
+    -webkit-transform:translate(-36%,0);
+    -o-transform:translate(-36%,0);
+    -ms-transform:translate(-36%,0);
+    transform:translate(-36%,0);
+    font-size: .22rem;
+}
+.lotteryBox ul li img{
+	width:100%;
+    z-index:2;
+}
+.lotteryBox ul li:nth-child(3n){
+	margin-right: 0;
+}
+.lotteryBox ul li.active .shade{
+    display: block;
+}
+.shade{
+    width:100%;
+    height:95.5%;
+    position:absolute;
+    left:0;
+    top:0;
+	background:url(../images/11.png) no-repeat;
+    background-size:cover;
+	z-index: 999;
+    display:none;
+}
